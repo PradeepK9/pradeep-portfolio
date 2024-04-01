@@ -1,5 +1,4 @@
 .services {
-  padding: 0 3rem 0 3rem;
   display: flex;
   height: 30rem;
   margin-bottom: 8rem;
@@ -28,12 +27,11 @@
 
 .awesome> :nth-child(3) {
   color: var(--gray);
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 1rem;
 }
 
 .s-button {
-  width: 8rem;
   height: 2rem;
   margin-top: 1rem;
 }
@@ -62,9 +60,12 @@
   .services {
     margin-top: 0;
     flex-direction: column;
-    gap: 5rem;
     height: 66rem;
     padding: 0;
+  }
+
+  .awesome {
+    padding: 3rem 0;
   }
 
   .cards {

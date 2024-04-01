@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,6 +17,8 @@ import project3 from "../../img/proj3.png";
 import project4 from "../../img/proj4.png";
 import project5 from "../../img/proj5.png";
 import project6 from "../../img/proj6.png";
+import project7 from "../../img/proj7.png";
+import { themeContext } from "../../Context";
 
 const Portfolio = () => {
   const progressCircle = useRef(null);
@@ -26,9 +28,19 @@ const Portfolio = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
+  // context
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Some of the Recent Personal Projects</h1>
+      <div className="awesome">
+        {/* dark mode */}
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
+        <span>Projects</span>
+        <span>Some of my personal projects :</span>
+        <br />
+      </div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -49,6 +61,9 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={project6} alt="project6" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={project7} alt="project7" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={project3} alt="project3" />

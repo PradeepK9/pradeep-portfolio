@@ -26,17 +26,20 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Skills</span>
-        <spane>
+        <span>
           Proficient in building modern and responsive user interfaces using
           <br /> <b>React.js, Redux, HTML, CSS, Javascript</b> and other
           frontend tools.
+          {/* <br /> */}
+          <br />I also possess knowledge of backend technologies such as Node.js
+          and Express.js
           <br />
           <br />
-          Below are the skills that showcase my commitment to delivering <br />
+          Here are the skills that showcase my commitment to delivering <br />
           comprehensive and well-rounded solutions:👉🏻
-        </spane>
+        </span>
         <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+          <button className="button s-button">Download Resume</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
@@ -44,35 +47,37 @@ const Services = () => {
       <div className="cards">
         {/* first card */}
         <motion.div
-          initial={{ left: "25rem" }}
+          initial={{ left: "19rem" }}
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
           <Card
             emoji={HeartEmoji}
             heading={"Tools"}
-            detail={"Jira, Git, VS Code, Agile Methodology, Bit Bucket, etc."}
+            detail={
+              "Jira, Git, GitHub, VS Code, Agile Methodology, Bit Bucket, etc."
+            }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
         {/* second card */}
         <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
+          initial={{ left: "-8rem", top: "12rem" }}
+          whileInView={{ left: "-2rem" }}
           transition={transition}
         >
           <Card
             emoji={Glasses}
             heading={"Frontend Technologies"}
             detail={
-              "HTML, CSS, JavaScript, React.js, Redux, Jest, TailwindCSS, Material UI, Bootstrap, EcmaScript"
+              "HTML, CSS, JavaScript, React.js, Redux, Unit testing, Jest, TailwindCSS, Material UI, Bootstrap, EcmaScript"
             }
           />
         </motion.div>
         {/* 3rd */}
         <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
+          initial={{ top: "19rem", left: "18rem" }}
+          whileInView={{ left: "14rem" }}
           transition={transition}
         >
           <Card

@@ -1,8 +1,4 @@
 .portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin-top: 4rem;
 }
 
@@ -12,6 +8,10 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+.portfolio .awesome {
+  margin-bottom: 2rem;
 }
 
 .portfolio .swiper {
@@ -104,6 +104,12 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+
+  .portfolio .awesome {
+    margin-bottom: 0;
+    padding: 2rem 0;
+  }
+
   .portfolio h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;

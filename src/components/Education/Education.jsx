@@ -4,10 +4,10 @@ import "./Education.css";
 const Education = () => {
   return (
     <div className="education" id="works">
-      <h1>My Education</h1>
-      <h2>Master of Computer Application (MCA)</h2>
-      <h3>2020</h3>
-      <h3>University Institute of Engineering and Technology Kanpur, India</h3>
+      <span>My Education</span>
+      <span>Master of Computer Application (MCA)</span>
+      <span>2020</span>
+      <span>University Institute of Engineering and Technology, CSJMU Kanpur, India</span>
     </div>
   );
 };

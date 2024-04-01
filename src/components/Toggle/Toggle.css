@@ -1,6 +1,6 @@
-.toggle{
+.toggle {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     border: 3px solid var(--orange);
     border-radius: 1rem;
     position: relative;
@@ -8,12 +8,14 @@
     cursor: pointer;
 
 }
-.toggle>*{
+
+.toggle>* {
     width: 1rem;
     height: 1rem;
     color: var(--orange);
 }
-.t-button{
+
+.t-button {
     border-radius: 100%;
     background: var(--orange);
     position: absolute;

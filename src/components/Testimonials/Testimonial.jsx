@@ -1,12 +1,10 @@
 import React from "react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import profilePic1 from "../../img/award.png";
 import "./Testimonial.css";
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -26,7 +24,11 @@ const clients = [
 const Testimonial = () => {
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Got awarded for my Hard Work</h1>
+      <div className="awards">
+        <span className="heading">Awards</span>
+        <br />
+        <span className="details">Here are some of my awards : </span>
+      </div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

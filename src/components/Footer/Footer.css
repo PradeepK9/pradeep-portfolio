@@ -5,6 +5,7 @@
   position: relative;
   margin-top: -7rem;
 }
+
 .f-content {
   position: absolute;
   display: flex;
@@ -16,13 +17,18 @@
   gap: 4rem;
   color: white;
 }
+
 .f-icons {
   display: flex;
   gap: 2rem;
 }
 
-@media screen and (max-width: 768px){
-  .f-content{
+@media screen and (max-width: 768px) {
+  .f-content {
     transform: scale(.5);
+  }
+
+  .f-content span {
+    font-size: 2rem;
   }
 }

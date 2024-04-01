@@ -27,26 +27,35 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Pradeep Jaiswal</span>
           <span>
-            I'm Frontend Software Engineer with a wealth of experience and expertise in
-            the dynamic realm of web development. My commitment to delivering
-            high-quality work has been a driving force throughout my career.
+            I'm a passionate <b>Senior Software Engineer</b> specializing in
+            frontend enchantments and occasional backend wizardry. With my
+            trusty toolkit of <b>React, Redux</b>, and a sprinkle of{" "}
+            <b>Node.js</b> magic, I conjure up delightful user experiences that
+            leave a lasting impression. Let's embark on a journey to transform
+            ideas into digital masterpieces.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
+          <button className="button">Contact me</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
           <a href="https://github.com/PradeepK9" target="blank">
             <img src={Github} alt="Github" />
           </a>
-          <a href="https://www.linkedin.com/in/pradeepjaiswal234/" target="blank">
+          <a
+            href="https://www.linkedin.com/in/pradeepjaiswal234/"
+            target="blank"
+          >
             <img src={LinkedIn} alt="LinkedIn" />
           </a>
-          <a href="https://www.instagram.com/_pradeep__jaiswal?igsh=ZGNjOWZkYTE3MQ==" target="blank">
+          <a
+            href="https://www.instagram.com/_pradeep__jaiswal?igsh=ZGNjOWZkYTE3MQ=="
+            target="blank"
+          >
             <img src={Instagram} alt="Instagram" />
           </a>
         </div>
@@ -71,7 +80,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Software" text2="Engineer" />
+          <FloatinDiv img={crown} text1="Sr. Software" text2="Engineer" />
         </motion.div>
 
         {/* animation */}

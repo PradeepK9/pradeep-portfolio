@@ -29,7 +29,10 @@ const Footer = () => {
           <a href="https://github.com/PradeepK9" target="blank">
             <Gitub color="white" size={"3rem"} />
           </a>
-          <a href="#" target="blank">
+          <a
+            href="https://www.instagram.com/_pradeep__jaiswal?igsh=ZGNjOWZkYTE3MQ=="
+            target="blank"
+          >
             <Facebook color="white" size={"3rem"} />
           </a>
         </div>

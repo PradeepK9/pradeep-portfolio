@@ -11,10 +11,10 @@ const Contact = () => {
     e.preventDefault();
 
     // Check if any of the form fields are empty
-    const { user_name, user_email, message } = form.current;
+    const { name, email, message } = form.current;
     if (
-      !user_name.value.trim() ||
-      !user_email.value.trim() ||
+      !name.value.trim() ||
+      !email.value.trim() ||
       !message.value.trim()
     ) {
       alert("Please fill out all fields");
@@ -24,7 +24,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_5lyvk0c",
-        "template_bbjhmw8",
+        "template_8nn2u75",
         form.current,
         "YYYFrtyJaSjLsqilL"
       )
@@ -61,13 +61,13 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            name="user_name"
+            name="name"
             className="user"
             placeholder="Name"
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             className="user"
             placeholder="Email"
           />
